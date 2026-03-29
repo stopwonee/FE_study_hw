@@ -20,15 +20,15 @@
     flex-direction: column;
 }
 
-.et_time {
+.et_name { /*이거 안먹음 -> 해결함. <p> 안에 <p> 쓰지 말기!*/
     margin: 0;
     color: #ff1900;
     font-size: 12px;
     font-weight: bold;
 }
 
-.school_name{
-    margin:0;
+.school_name{ /*얘도 안먹음 -> 마찬가지*/
+    margin: 0;
     color: #121212;
     font-size: 22px;
     font-weight: bold;
@@ -92,11 +92,17 @@
 
 .showing_hot_post {
     display: flex;
+    background-color: rgba(255, 209, 209, 20);
 }
 
 .showing_hot_post > img {
     width: 24px;
     height: 24px;
+    padding: 8px;
+}
+
+.hot_post_lucky{
+    padding: 8px;
 }
 
 .hot_post_thumbsup {
@@ -114,6 +120,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: rgb(224, 224, 224);
 }
 
 .writing_new_post > img {
@@ -135,6 +142,7 @@
     color: #056AB5;
     font-size: 20px;
     font-weight: bold;
+    gap: 0px 0px 8px 0px;
 }
 
 .how_hot_no1, .how_hot_no2 {
@@ -148,6 +156,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 30px;
+    padding: 5px 0px;
 }
 
 .how_hot_no1, .how_hot_no2 {
@@ -160,16 +169,55 @@
 .thumbs_up_no1, .comments_no1, .thumbs_up_no2, .comments_no2 {
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 .thumbs_up_no1 > img, .comments_no1 > img, .thumbs_up_no2 > img, .comments_no2 > img {
     width: 11px;
     height: 11px;
-    font-size: 13px;
-    gap: 5px;
 }
+
+.thumbs_up_no1 > p, .comments_no1 > p, .thumbs_up_no2 > p, .comments_no2 > p {
+    font-size: 13px;
+    margin: 0;
+}
+
 .hot_post_fst, .hot_post_snd, .hot_post_trd, .hot_post_fth {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.article1, .article2, .article3 {
+    margin: 20px;
+}
+
+.title1, .title2, .title3 {
+    font-weight: bold;
+}
+
+.footer1, .footer2, .footer3 {
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.content1, .content2, .content3 {
+    font-size: 15px;
+}
+
+.now_hot_no1_title, .now_hot_no2_title {
+    font-weight: bold;
+    margin: 3px 0px 5px 0px;
+}
+
+.now_hot_no1_content, .now_hot_no2_content {
+    font-size: 15px;
+}
+
+.now_hot_no1_footer, .now_hot_no2_footer{
+    font-size: 12px;
+}
+
+.hot_post_list {
     justify-content: space-between;
 }
