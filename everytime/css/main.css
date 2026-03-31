@@ -35,7 +35,7 @@
 }
 
 .top_header{
-    margin: 25px;
+    margin: 20px 25px;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -45,7 +45,11 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 20px;
+}
+
+.list_of_service > p {
+    font-weight: bold;
 }
 
 .now_on_service{
@@ -69,13 +73,87 @@
     display: flex;
     align-items: baseline;
     justify-content: space-evenly;
+
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-top: solid 2px #e5e5e5;
+    border-bottom: solid 2px #e5e5e5;
 }
 
-.basic_board{
+.basic_board {
     display: flex;
     align-items: baseline;
     justify-content: space-evenly;
-    height: 247.5;
+
+    font-size: 14px;
+    color: #555;
+    gap: 10px;
+}
+
+.fst_line_basic_board, .snd_line_basic_board {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fst_line_basic_board {
+    padding: 0px 45px 0px 0px;
+}
+
+.secretBoard {
+    color: #ff1900;
+    font-weight: bold;
+}
+
+.board_about_employment > div {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 14px;
+    color: #555;
+
+    gap: 8px;
+}
+
+.school_inst_board > ul {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 14px;
+    color: #555;
+
+    gap: 8px;
+}
+
+
+.board_for_dept > div {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 14px;
+    color: #555;
+
+    gap: 8px;
+}
+
+.exc_board1 > div {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 14px;
+    color: #555;
+
+    gap: 8px;
+}
+
+.exc_board2 > div {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 14px;
+    color: #555;
+
+    gap: 8px;
 }
 
 .futhermore {
