@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Apple SD Gothic Neo", "맑은 고딕", "돋움", sans-serif;
+}
+
+.logo_header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo_header > img {
+    width: 40px;
+    height: 40px;
+}
+
+.text_header {
+    display: flex;
+    flex-direction: column;
+}
+
+.et_name { /*이거 안먹음 -> 해결함. <p> 안에 <p> 쓰지 말기!*/
+    margin: 0;
+    color: #ff1900;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.school_name{ /*얘도 안먹음 -> 마찬가지*/
+    margin: 0;
+    color: #121212;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.top_header{
+    margin: 20px 25px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list_of_service{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.list_of_service > p {
+    font-weight: bold;
+}
+
+.now_on_service{
+    color: #ff1900;
+    font-weight: bold;
+}
+
+.chat_and_profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.chat_and_profile > img {
+    border: 1px;
+    border-color: #121212;
+}
+
+.list_of_board{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-top: solid 2px #e5e5e5;
+    border-bottom: solid 2px #e5e5e5;
+}
+
+.basic_board {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+
+    font-size: 14px;
+    color: #555;
+    gap: 10px;
+}
+
+.fst_line_basic_board, .snd_line_basic_board {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fst_line_basic_board {
+    padding: 0px 45px 0px 0px;
+}
+
+.secretBoard {
+    color: #ff1900;
+    font-weight: bold;
+}
+
+.board_about_employment > div {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 14px;
+    color: #555;
+
+    gap: 8px;
+}
+
+.school_inst_board > ul {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 14px;
+    color: #555;
+
+    gap: 8px;
+}
+
+
+.board_for_dept > div {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 14px;
+    color: #555;
+
+    gap: 8px;
+}
+
+.exc_board1 > div {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 14px;
+    color: #555;
+
+    gap: 8px;
+}
+
+.exc_board2 > div {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 14px;
+    color: #555;
+
+    gap: 8px;
+}
+
+.futhermore {
+    color: #ff1900;
+    font-weight: bold;
+}
+
+.header_for_sb_category {
+    display: flex;
+    justify-content: flex-start;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    border: 1px solid #d6d6d6;
+
+    padding: 10px;
+    margin: 15px;
+}
+
+.main_part {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header_for_sb_category {
+    border: 1px solid #e3e3e3;
+    padding: 15px 20px;
+    margin-bottom: 8px;
+    background-color: #fff;
+}
+
+.header_for_sb_category > p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #292929;
+}
+
+.detailed_post {
+    border: 1px solid #e3e3e3;
+    background-color: #fff;
+    padding: 25px;
+    position: relative;
+}
+
+.who_wrote_this {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.who_wrote_this > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.name_tag{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name_tag > .nickname {
+    font-weight: bold;
+    font-size: 14px;
+    color: #292929;
+}
+
+.name_tag > .written_time {
+    font-size: 12px;
+    color: #a6a6a6;
+    margin-top: 2px;
+}
+
+.post_options {
+    display: flex;
+
+    right: 25px;
+    top: 25px;
+
+    gap: 12px;
+}
+
+.post_options div {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color:#a6a6a6;
+}
+
+.post_title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+.post_text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.post_reaction {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.post_reaction div {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.post_reaction img {
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+}
+
+.ttabong { 
+    color: #f91f15; 
+}
+
+.thatguel {
+    color: #056ab5; 
+}    
+
+.peogayo {
+    color: #ffcd12; 
+}  
+
+.post_button {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.ttabong_button, .scrap_button {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.ttabong_button img, .scrap_button img {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+.ttabong_button div, .scrap_button div {
+    font-size: 12px;
+    font-weight: bold;
+    color: #737373;
+}
+
+
+.leave_comment {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 2px solid #e3e3e3;
+    padding: 4px 4px 4px 15px;
+}
+
+
+.comment_musuri {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comment_musuri label {
+    font-size: 12px;
+    color: #a6a6a6;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.submit_comment {
+    background-color: #c62917;
+
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_comment img {
+    width: 20px;
+    height: 20px;
+}
+
+.post_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 85px;
+    height: 35px;
+    border: 1px solid #c62917;
+
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.post_list img {
+    width: 14px;
+    margin-right: 5px;
+}
+
+.post_list div {
+    font-size: 13px;
+    font-weight: bold;
+    color: #c62917;
+}
+
+.big_box_for_aside {
+    display:flex;
+    flex-direction: column;
+}
+
+.title_now_hot, .title_hot_post {
+    background-color: #f6f6f6;
+    color: #056AB5;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    padding: 12px 15px;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.how_hot_no1, .how_hot_no2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.now_hot_no1_footer, .now_hot_no2_footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    padding: 5px 0px;
+}
+
+.how_hot_no1, .how_hot_no2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.thumbs_up_no1, .comments_no1, .thumbs_up_no2, .comments_no2 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.thumbs_up_no1 > img, .comments_no1 > img, .thumbs_up_no2 > img, .comments_no2 > img {
+    width: 11px;
+    height: 11px;
+}
+
+.thumbs_up_no1 > p, .comments_no1 > p, .thumbs_up_no2 > p, .comments_no2 > p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.hot_post_fst, .hot_post_snd, .hot_post_trd, .hot_post_fth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.article1, .article2, .article3 {
+    padding: 10px;
+    margin: 15px;
+}
+
+.title1, .title2, .title3 {
+    font-weight: bold;
+
+    margin: 5px;
+    padding: 0px 10px 5px 10px;
+}
+
+.footer1, .footer2, .footer3 {
+    font-weight: lighter;
+    font-size: 12px;
+
+    margin: 5px;
+    padding: 0px 10px 5px 10px;
+}
+
+.content1, .content2, .content3 {
+    font-size: 15px;
+
+    margin: 5px;
+    padding: 0px 10px 5px 10px;
+}
+
+.now_hot_list {
+    border: 1px solid #e3e3e3;
+    background-color: #f6f6f6;
+    margin: 20px 10px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.title_now_hot {
+    display: block;
+    color: #056AB5;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 15px;
+
+    border-bottom: 1px solid #f2f2f2;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.now_hot_no1, .now_hot_no2 {
+    padding: 12px 15px;
+    border-bottom: 1px solid #f2f2f2;
+    border: none;
+    
+    margin: 0;
+}
+
+.now_hot_no2 {
+    border-bottom: none;
+}
+
+.now_hot_no1_title, .now_hot_no2_title {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0px 0px 4px 0px;
+}
+
+.now_hot_no1_content, .now_hot_no2_content {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+.now_hot_no1_footer, .now_hot_no2_footer{
+    font-size: 12px;
+}
+
+.hot_post_list {
+    display: block;
+    border: 1px solid #e3e3e3;
+    background-color: #f6f6f6;
+    margin: 20px 10px;
+}
+
+/*입력창 꽉채우는 방법? / 왜 저거 지금 가로로 정렬 안되는지... 분명 에타로고헤더 만들떄랑 똑같이햇는데...ㅜ*/
+/*아니그리고 어사이드 저거 개밤티 어케해결하지...?*/
+/*nav에 선긋는것도...border를 쓰면되야하는거아냐? 왜 안되지*/
+/*분명히 비밀게시판 << 이거 건들인게 없는데 왜 저렇게 된거지???????*/
