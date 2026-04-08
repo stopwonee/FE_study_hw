@@ -598,3 +598,45 @@
     font-weight: bold;
     padding: 12px 15px;
 }
+
+.hamburger_menu {
+    display: none;
+}
+
+.hamburger_menu > img {
+    width: 40px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 640px) {
+    .big_box_for_aside {
+        display: none;
+    }
+
+    .list_of_board {
+        display: none;
+    }
+
+    .hamburger_menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .logo_header, .list_of_service, .chat_and_profile{
+        display: none;
+    }
+
+    .main_part {
+        display: block;
+        width: 100%;
+    }
+    
+    .secret_board {
+        width: 100%;
+        margin: 0;
+    }
+}
