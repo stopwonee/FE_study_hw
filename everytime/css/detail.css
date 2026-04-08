@@ -394,6 +394,43 @@
     height: 20px;
 }
 
+.realComments {
+    border: 1px solid #e3e3e3;
+}
+
+.middleBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sideOfComment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sideOfComment > p {
+    margin: 10px;
+    color: #a6a6a6;
+    font-size: 12px;
+}
+
+.realComments > p {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.realComments > div {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #a6a6a6;
+}
+
 .post_list {
     display: flex;
     align-items: center;
