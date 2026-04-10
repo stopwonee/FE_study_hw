@@ -213,6 +213,7 @@
     border: 1px solid #e3e3e3;
     background-color: #fff;
     padding: 25px;
+    padding-bottom: 0pt;
     position: relative;
 }
 
@@ -356,7 +357,31 @@
     padding: 4px 4px 4px 15px;
 }
 
+.reThatGuel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #f9f9f9;
+    border: 2px solid #e3e3e3;
+    padding: 4px 4px 4px 15px;
+
+    margin-left: 45px;
+    width: 100%;
+}
+
+.boxForHide {
+    display: none;
+}
+
 .thatguelChang {
+    width: 100%;
+    border: none;
+    background: none;
+}
+
+.reThatguelChang {
     width: 100%;
     border: none;
     background: none;
@@ -377,7 +402,7 @@
     width: 40px;
 }
 
-.submit_comment {
+.submit_comment_tg {
     background-color: #c62917;
     border: none;
     width: 35px;
@@ -389,7 +414,24 @@
     align-items: center;
 }
 
-.submit_comment img {
+.submit_comment_tg img {
+    width: 20px;
+    height: 20px;
+}
+
+.submit_comment_rtg {
+    background-color: #c62917;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_comment_rtg img {
     width: 20px;
     height: 20px;
 }
@@ -418,17 +460,30 @@
     font-size: 12px;
 }
 
+#reReply {
+    border: none;
+    background-color: transparent;
+    color: #a6a6a6;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
 .realComments > p {
     margin-top: 10px;
     margin-left: 5px;
 }
 
-.realComments > div {
+.commentContent {
     margin-top: 10px;
     margin-left: 5px;
     margin-bottom: 5px;
     font-size: 12px;
     color: #a6a6a6;
+}
+
+.commentContent > p {
+    color: #444444;
+    font-size: 15px;
 }
 
 .post_list {
@@ -650,9 +705,9 @@
         display: none;
     }
 
-    .list_of_board {
+    /*.list_of_board {
         display: none;
-    }
+    }*/
 
     .hamburger_menu {
         display: flex;
