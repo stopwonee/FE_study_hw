@@ -73,7 +73,9 @@
 .list_of_board{
     display: flex;
     align-items: baseline;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    overflow: hidden; 
+    white-space: nowrap;
 
     padding: 20px 100px;
     background-color: #f6f6f6;
@@ -114,7 +116,7 @@
 .wrap_for_nav {
     height: 208px;
     border-right: 1px solid #e3e3e3;
-    padding: 20px 20px 20px 0px;
+    padding: 20px 20px 20px 20px;
     left: 5px;
 }
 
@@ -720,6 +722,9 @@
 
 .hamburger_menu {
     display: none;
+    border-bottom: #a6a6a6;
+    height: 30px;
+    margin-top: 0px;
 }
 
 .hamburger_menu > img {
@@ -730,25 +735,19 @@
 }
 
 @media screen and (max-width: 640px) {
-    .big_box_for_aside {
-        display: none;
-    }
-
-    .list_of_board {
-        display: none;
+    .big_box_for_aside, 
+    .list_of_board, 
+    .logo_header, 
+    .list_of_service, 
+    .chat_and_profile {
+        display: none !important;
     }
 
     .hamburger_menu {
-        display: flex;
+        display: flex !important;
         flex-direction: row;
         align-items: center;
-        font-size: 24px;
-        cursor: pointer;
-        padding: 10px;
-    }
-
-    .logo_header, .list_of_service, .chat_and_profile{
-        display: none;
+        font-weight: bold;
     }
 
     .main_part {
@@ -759,5 +758,10 @@
     .secret_board {
         width: 100%;
         margin: 0;
+    }
+
+    .top_header {
+        margin: 10px 15px;
+        justify-content: flex-start;
     }
 }
